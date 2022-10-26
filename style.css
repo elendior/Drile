@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Federo&family=Inter&family=Open+Sans:wght@300;400;600&family=Potta+One&display=swap");
-.trending .trending_container .trending_icons a:hover, .trending .trending_container .trending_icons a, .trending .trending_container .trending_icons, .deal_of .deal_of_container .deal_of_info .deal_of_name:hover, .deal_of .deal_of_container .deal_of_info .deal_of_name, .home .home_container .home_info a, .header .header_container .header_icons svg:hover, .header .header_container .header_icons svg, .header .header_container .header_nav a:hover, .header .header_container .header_nav a, .footer .wrapper_container .footer_container .wrapper_nav nav .instagram a svg, .footer .wrapper_container .footer_container .wrapper_nav nav .twitter a svg, .footer .wrapper_container .footer_container .wrapper_nav nav .facebook a svg, .footer .wrapper_container .footer_container .wrapper_nav nav .instagram a, .footer .wrapper_container .footer_container .wrapper_nav nav .twitter a, .footer .wrapper_container .footer_container .wrapper_nav nav .facebook a, .deal_of .deal_of_container .deal_of_info a:hover, .trending .trending_container .trending_items .item_4 .icn a svg, .trending .trending_container .trending_items .item_3 .icn a svg, .trending .trending_container .trending_items .item_2 .icn a svg, .trending .trending_container .trending_items .item_1 .icn a svg, .trending .trending_container .trending_items .item_4 .icn a, .trending .trending_container .trending_items .item_3 .icn a, .trending .trending_container .trending_items .item_2 .icn a, .trending .trending_container .trending_items .item_1 .icn a, .seller .seller_container .seller_items .item7 .icn a svg, .seller .seller_container .seller_items .item6 .icn a svg, .seller .seller_container .seller_items .item5 .icn a svg, .seller .seller_container .seller_items .item4 .icn a svg, .seller .seller_container .seller_items .item3 .icn a svg, .seller .seller_container .seller_items .item2 .icn a svg, .seller .seller_container .seller_items .item1 .icn a svg, .seller .seller_container .seller_items .item7 .icn a, .seller .seller_container .seller_items .item6 .icn a, .seller .seller_container .seller_items .item5 .icn a, .seller .seller_container .seller_items .item4 .icn a, .seller .seller_container .seller_items .item3 .icn a, .seller .seller_container .seller_items .item2 .icn a, .seller .seller_container .seller_items .item1 .icn a {
+#modal.active, #modal .modal_container .wrapper_modal_btn .btn:hover, #modal .modal_container table tbody .remove:active, #modal .modal_container table tbody .remove, #modal .modal_container table tbody .modal_count_wrapper .minus:active, #modal .modal_container table tbody .modal_count_wrapper .minus:hover, #modal .modal_container table tbody .modal_count_wrapper .minus, #modal .modal_container table tbody .modal_count_wrapper .plus:active, #modal .modal_container table tbody .modal_count_wrapper .plus:hover, #modal .modal_container table tbody .modal_count_wrapper .plus, #modal, .trending .trending_container .trending_icons a:hover, .trending .trending_container .trending_icons a, .trending .trending_container .trending_icons, .deal_of .deal_of_container .deal_of_info .deal_of_name:hover, .deal_of .deal_of_container .deal_of_info .deal_of_name, .home .home_container .home_info a, .header .header_container .header_icons a svg:hover, .header .header_container .header_icons a svg, .header .header_container .header_icons a:hover, .header .header_container .header_icons a, .header .header_container .header_nav.active .header_list a:hover, .header .header_container .header_nav.active .header_list a, .header .header_container .header_nav.active, .header .header_container .header_nav .header_list a:hover, .header .header_container .header_nav .header_list a, .footer .wrapper_container .footer_container .wrapper_nav nav .instagram a svg, .footer .wrapper_container .footer_container .wrapper_nav nav .twitter a svg, .footer .wrapper_container .footer_container .wrapper_nav nav .facebook a svg, .footer .wrapper_container .footer_container .wrapper_nav nav .instagram a, .footer .wrapper_container .footer_container .wrapper_nav nav .twitter a, .footer .wrapper_container .footer_container .wrapper_nav nav .facebook a, .deal_of .deal_of_container .deal_of_info a:hover, .trending .trending_container .trending_items .item11 .icn a svg, .trending .trending_container .trending_items .item10 .icn a svg, .trending .trending_container .trending_items .item9 .icn a svg, .trending .trending_container .trending_items .item8 .icn a svg, .trending .trending_container .trending_items .item11 .icn a, .trending .trending_container .trending_items .item10 .icn a, .trending .trending_container .trending_items .item9 .icn a, .trending .trending_container .trending_items .item8 .icn a, .seller .seller_container .seller_items .item7 .icn a svg, .seller .seller_container .seller_items .item6 .icn a svg, .seller .seller_container .seller_items .item5 .icn a svg, .seller .seller_container .seller_items .item4 .icn a svg, .seller .seller_container .seller_items .item3 .icn a svg, .seller .seller_container .seller_items .item2 .icn a svg, .seller .seller_container .seller_items .item1 .icn a svg, .seller .seller_container .seller_items .item7 .icn a, .seller .seller_container .seller_items .item6 .icn a, .seller .seller_container .seller_items .item5 .icn a, .seller .seller_container .seller_items .item4 .icn a, .seller .seller_container .seller_items .item3 .icn a, .seller .seller_container .seller_items .item2 .icn a, .seller .seller_container .seller_items .item1 .icn a {
   transition: all 0.8s ease;
 }
 
@@ -85,7 +85,7 @@
   fill: #000000;
 }
 
-.trending .trending_container .trending_items .item_4, .trending .trending_container .trending_items .item_3, .trending .trending_container .trending_items .item_2, .trending .trending_container .trending_items .item_1 {
+.trending .trending_container .trending_items .item11, .trending .trending_container .trending_items .item10, .trending .trending_container .trending_items .item9, .trending .trending_container .trending_items .item8 {
   height: 342px;
   flex: 1 1 calc(25% - 30px);
   background: #FFFFFF;
@@ -96,43 +96,43 @@
   position: relative;
 }
 @media (max-width: 991px) {
-  .trending .trending_container .trending_items .item_4, .trending .trending_container .trending_items .item_3, .trending .trending_container .trending_items .item_2, .trending .trending_container .trending_items .item_1 {
+  .trending .trending_container .trending_items .item11, .trending .trending_container .trending_items .item10, .trending .trending_container .trending_items .item9, .trending .trending_container .trending_items .item8 {
     flex: 1 1 300px;
     margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
-  .trending .trending_container .trending_items .item_4, .trending .trending_container .trending_items .item_3, .trending .trending_container .trending_items .item_2, .trending .trending_container .trending_items .item_1 {
+  .trending .trending_container .trending_items .item11, .trending .trending_container .trending_items .item10, .trending .trending_container .trending_items .item9, .trending .trending_container .trending_items .item8 {
     flex: 1 1 230px;
     margin: 0 auto;
   }
 }
 @media (max-width: 576px) {
-  .trending .trending_container .trending_items .item_4, .trending .trending_container .trending_items .item_3, .trending .trending_container .trending_items .item_2, .trending .trending_container .trending_items .item_1 {
+  .trending .trending_container .trending_items .item11, .trending .trending_container .trending_items .item10, .trending .trending_container .trending_items .item9, .trending .trending_container .trending_items .item8 {
     flex: 1 1 45%;
     margin: 0 auto;
   }
 }
 @media (max-width: 470px) {
-  .trending .trending_container .trending_items .item_4, .trending .trending_container .trending_items .item_3, .trending .trending_container .trending_items .item_2, .trending .trending_container .trending_items .item_1 {
+  .trending .trending_container .trending_items .item11, .trending .trending_container .trending_items .item10, .trending .trending_container .trending_items .item9, .trending .trending_container .trending_items .item8 {
     flex: 1 1 250px;
     margin: 0 auto;
   }
 }
-.trending .trending_container .trending_items .item_4 div, .trending .trending_container .trending_items .item_3 div, .trending .trending_container .trending_items .item_2 div, .trending .trending_container .trending_items .item_1 div {
+.trending .trending_container .trending_items .item11 div, .trending .trending_container .trending_items .item10 div, .trending .trending_container .trending_items .item9 div, .trending .trending_container .trending_items .item8 div {
   margin: 0 auto;
 }
-.trending .trending_container .trending_items .item_4 .text, .trending .trending_container .trending_items .item_3 .text, .trending .trending_container .trending_items .item_2 .text, .trending .trending_container .trending_items .item_1 .text {
+.trending .trending_container .trending_items .item11 .text, .trending .trending_container .trending_items .item10 .text, .trending .trending_container .trending_items .item9 .text, .trending .trending_container .trending_items .item8 .text {
   padding-bottom: 25px;
 }
-.trending .trending_container .trending_items .item_4 .text h3, .trending .trending_container .trending_items .item_3 .text h3, .trending .trending_container .trending_items .item_2 .text h3, .trending .trending_container .trending_items .item_1 .text h3 {
+.trending .trending_container .trending_items .item11 .text h3, .trending .trending_container .trending_items .item10 .text h3, .trending .trending_container .trending_items .item9 .text h3, .trending .trending_container .trending_items .item8 .text h3 {
   line-height: 22px;
   text-align: center;
   letter-spacing: -0.035em;
   color: #2A2A2B;
   margin-bottom: 8px;
 }
-.trending .trending_container .trending_items .item_4 .text p, .trending .trending_container .trending_items .item_3 .text p, .trending .trending_container .trending_items .item_2 .text p, .trending .trending_container .trending_items .item_1 .text p {
+.trending .trending_container .trending_items .item11 .text p, .trending .trending_container .trending_items .item10 .text p, .trending .trending_container .trending_items .item9 .text p, .trending .trending_container .trending_items .item8 .text p {
   font-family: "Federo";
   font-size: 14px;
   line-height: 20px;
@@ -140,7 +140,7 @@
   letter-spacing: 0.02em;
   color: #8C8C8C;
 }
-.trending .trending_container .trending_items .item_4 .icn, .trending .trending_container .trending_items .item_3 .icn, .trending .trending_container .trending_items .item_2 .icn, .trending .trending_container .trending_items .item_1 .icn {
+.trending .trending_container .trending_items .item11 .icn, .trending .trending_container .trending_items .item10 .icn, .trending .trending_container .trending_items .item9 .icn, .trending .trending_container .trending_items .item8 .icn {
   position: absolute;
   right: 5px;
   bottom: 80px;
@@ -148,7 +148,7 @@
   flex-direction: column;
   gap: 5px;
 }
-.trending .trending_container .trending_items .item_4 .icn a, .trending .trending_container .trending_items .item_3 .icn a, .trending .trending_container .trending_items .item_2 .icn a, .trending .trending_container .trending_items .item_1 .icn a {
+.trending .trending_container .trending_items .item11 .icn a, .trending .trending_container .trending_items .item10 .icn a, .trending .trending_container .trending_items .item9 .icn a, .trending .trending_container .trending_items .item8 .icn a {
   background: #FFFFFF;
   border: 0.2px solid #454545;
   height: 27px;
@@ -157,13 +157,13 @@
   justify-content: center;
   align-items: center;
 }
-.trending .trending_container .trending_items .item_4 .icn a:hover, .trending .trending_container .trending_items .item_3 .icn a:hover, .trending .trending_container .trending_items .item_2 .icn a:hover, .trending .trending_container .trending_items .item_1 .icn a:hover {
+.trending .trending_container .trending_items .item11 .icn a:hover, .trending .trending_container .trending_items .item10 .icn a:hover, .trending .trending_container .trending_items .item9 .icn a:hover, .trending .trending_container .trending_items .item8 .icn a:hover {
   background: rgba(70, 63, 63, 0.83);
 }
-.trending .trending_container .trending_items .item_4 .icn a:hover svg, .trending .trending_container .trending_items .item_3 .icn a:hover svg, .trending .trending_container .trending_items .item_2 .icn a:hover svg, .trending .trending_container .trending_items .item_1 .icn a:hover svg {
+.trending .trending_container .trending_items .item11 .icn a:hover svg, .trending .trending_container .trending_items .item10 .icn a:hover svg, .trending .trending_container .trending_items .item9 .icn a:hover svg, .trending .trending_container .trending_items .item8 .icn a:hover svg {
   fill: #FFFFFF;
 }
-.trending .trending_container .trending_items .item_4 .icn a svg, .trending .trending_container .trending_items .item_3 .icn a svg, .trending .trending_container .trending_items .item_2 .icn a svg, .trending .trending_container .trending_items .item_1 .icn a svg {
+.trending .trending_container .trending_items .item11 .icn a svg, .trending .trending_container .trending_items .item10 .icn a svg, .trending .trending_container .trending_items .item9 .icn a svg, .trending .trending_container .trending_items .item8 .icn a svg {
   fill: #000000;
 }
 
@@ -269,24 +269,84 @@ a {
   display: flex;
   column-gap: 35px;
   list-style: none;
+  cursor: pointer;
 }
-.header .header_container .header_nav a {
+.header .header_container .header_nav .header_list .burger_close {
+  font-size: 0;
+}
+.header .header_container .header_nav .header_list a {
   line-height: 22px;
   letter-spacing: -0.035em;
   color: #697391;
 }
-.header .header_container .header_nav a:hover {
-  color: blue;
+.header .header_container .header_nav .header_list a:hover {
+  color: #7777c5;
+  font-weight: 600;
+}
+.header .header_container .header_nav.active {
+  width: 35vw;
+  height: 70vh;
+  z-index: 150;
+  position: fixed;
+  top: 23px;
+  right: 2px;
+  display: flex;
+  background-color: white;
+}
+.header .header_container .header_nav.active .header_list {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 25px;
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+.header .header_container .header_nav.active .header_list .burger_close {
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+.header .header_container .header_nav.active .header_list a {
+  line-height: 22px;
+  letter-spacing: -0.035em;
+  color: #434343;
+}
+.header .header_container .header_nav.active .header_list a:hover {
+  color: #7777c5;
+  font-size: 20px;
 }
 .header .header_container .header_icons {
   display: flex;
   column-gap: 37px;
+  align-items: center;
 }
-.header .header_container .header_icons svg {
+.header .header_container .header_icons a {
+  padding: 5px;
+  border-radius: 50px;
+}
+.header .header_container .header_icons a:hover {
+  background-color: #434343;
+}
+.header .header_container .header_icons a svg {
   fill: #6C758D;
 }
-.header .header_container .header_icons svg:hover {
-  fill: blue;
+.header .header_container .header_icons a svg:hover {
+  fill: white;
+}
+.header .header_container .header_icons .burger {
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 767px) {
+  .header .header_container .header_icons .burger {
+    display: block;
+  }
 }
 
 .home {
@@ -693,27 +753,19 @@ a {
   gap: 30px;
   flex-wrap: wrap;
 }
-.trending .trending_container .trending_items .item_1 {
+.trending .trending_container .trending_items .item8 {
   padding-top: 57px;
 }
-.trending .trending_container .trending_items .item_2 {
+.trending .trending_container .trending_items .item9 {
   padding-top: 70px;
 }
-.trending .trending_container .trending_items .item_3 {
+.trending .trending_container .trending_items .item10 {
   padding-top: 71px;
 }
-.trending .trending_container .trending_items .item_4 {
+.trending .trending_container .trending_items .item11 {
   padding-top: 70px;
 }
 
-.footer {
-  margin-bottom: 142px;
-}
-@media (max-width: 991px) {
-  .footer {
-    margin-bottom: 50px;
-  }
-}
 .footer .wrapper_container {
   background-image: url("img/footer/rooter_decor.svg");
   background-color: rgba(255, 255, 255, 0.22);
@@ -832,6 +884,9 @@ a {
     line-height: 180%;
   }
 }
+.footer .wrapper_container .footer_container .wrapper_nav nav li a {
+  color: #8A8A8A;
+}
 .footer h4 {
   font-family: "Inter";
   font-size: 16px;
@@ -847,6 +902,150 @@ a {
     line-height: 16px;
     padding: 10px;
   }
+}
+
+#modal {
+  padding: 60px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.63);
+  transform: translateY(-200vh);
+}
+#modal .modal_container {
+  padding: 30px;
+  box-shadow: 0 0 5px black;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+}
+#modal .modal_container table {
+  width: 100%;
+  font-size: 25px;
+  border-collapse: collapse;
+}
+#modal .modal_container table thead {
+  border-bottom: 1px solid gray;
+  line-height: 30px;
+}
+#modal .modal_container table thead tr th {
+  font-size: 20px;
+  text-align: left;
+}
+#modal .modal_container table tbody {
+  padding-top: 20px;
+}
+#modal .modal_container table tbody .table_img {
+  padding-top: 20px;
+  max-width: 70px;
+  height: auto;
+}
+#modal .modal_container table tbody .table_img img {
+  max-width: 100%;
+}
+#modal .modal_container table tbody .modal_count_wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+#modal .modal_container table tbody .modal_count_wrapper .minus, #modal .modal_container table tbody .modal_count_wrapper .count, #modal .modal_container table tbody .modal_count_wrapper .plus {
+  font-size: 25px;
+}
+#modal .modal_container table tbody .modal_count_wrapper .plus {
+  cursor: pointer;
+  color: rgba(128, 128, 128, 0.98);
+}
+#modal .modal_container table tbody .modal_count_wrapper .plus:hover {
+  color: darkgreen;
+  font-weight: 600;
+}
+#modal .modal_container table tbody .modal_count_wrapper .plus:active {
+  color: darkgreen;
+  font-weight: 700;
+}
+#modal .modal_container table tbody .modal_count_wrapper .minus {
+  cursor: pointer;
+  color: rgba(128, 128, 128, 0.72);
+}
+#modal .modal_container table tbody .modal_count_wrapper .minus:hover {
+  color: red;
+  font-weight: 600;
+}
+#modal .modal_container table tbody .modal_count_wrapper .minus:active {
+  color: red;
+  font-weight: 700;
+}
+#modal .modal_container table tbody .modal_count_wrapper .count {
+  display: inline-block;
+  padding: 10px;
+  width: 100px;
+  border: 1px solid rgba(128, 128, 128, 0.7);
+  border-radius: 25px;
+  text-align: center;
+}
+#modal .modal_container table tbody .remove {
+  cursor: pointer;
+  color: rgba(128, 128, 128, 0.72);
+  font-size: 20px;
+}
+#modal .modal_container table tbody .remove:active {
+  color: red;
+}
+#modal .modal_container .line {
+  width: 100%;
+  height: 1.5px;
+  background-color: gray;
+}
+#modal .modal_container .wrapper_order_price {
+  padding: 20px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  column-gap: 20px;
+  color: darkgreen;
+}
+#modal .modal_container .wrapper_order_price .order_price {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  color: darkgreen;
+}
+#modal .modal_container .wrapper_modal_btn {
+  padding: 20px;
+  display: flex;
+  column-gap: 35px;
+  justify-content: space-evenly;
+}
+#modal .modal_container .wrapper_modal_btn .btn {
+  display: inline-block;
+  padding: 8px 17px;
+  width: 200px;
+  background-color: #434343;
+  font-size: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 1px solid #434343;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#modal .modal_container .wrapper_modal_btn .btn:hover {
+  background-color: #FFFFFF;
+  color: #434343;
+}
+#modal .modal_container .modal_btn_close {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  cursor: pointer;
+}
+
+#modal.active {
+  transform: translateY(0);
 }
 
 /*# sourceMappingURL=style.css.map */

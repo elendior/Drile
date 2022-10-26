@@ -1,7 +1,7 @@
 const sliders = document.querySelectorAll(".slide");
 const btnLeft = document.querySelector(".btn_left");
 const btnRight = document.querySelector(".btn_right");
-const homeSlide = document.querySelector('.home_slide')
+
 
 let activeSlide = 0;
 
@@ -39,11 +39,26 @@ btnLeft.addEventListener("click", function (){
     setActiveSlide()
 })
 
-homeSlide.addEventListener('hover', function (){
-    clearInterval(interval)
-    console.log(homeSlide)
+// sliders.addEventListener('hover', function (){
+//     clearInterval(interval)
+//     return activeSlide
+// })
 
+//-------------------------------------------------------------------------------------------------
+
+const burger = document.querySelector('.burger');
+const burgerClose = document.querySelector('.burger_close');
+const nav = document.querySelector('.header_nav');
+
+
+burger.addEventListener('click', function (){
+    nav.classList.add('active')
 })
+burgerClose.addEventListener('click', function (){
+    nav.classList.remove('active')
+})
+
+
 
 
 
