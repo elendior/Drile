@@ -19,7 +19,7 @@ let product = [
         img: "img/main/seller/seller_product2.png",
         product:'Klosh Table Clock',
         price:99.00,
-        discount:0,
+        discount: 0,
     },
     {
         id:'03',
@@ -87,20 +87,21 @@ let product = [
 let items = document.querySelectorAll('.item');
 let addToCart = document.querySelectorAll('.add_to_cart');
 let tbody = document.querySelector('tbody');
+let orderPrice = document.querySelector('.order_price_container')
 
 let Cart = function () {
     this.items = {}
-    this.addItem = function (id, img, product, price) {
+    this.addItem = function (id, img, product, price, discount) {
         this.items [id] = {
             id:id,
             img: img,
             product:product,
             price:price,
-            // discount:discount,
+            discount:discount,
             count:1
         }
     }
-    this.drawItems = function (item){
+    this.drawItems = function (items){
         let cartHtml = ''
         for (let item in items){
             const html = `
@@ -112,27 +113,76 @@ let Cart = function () {
                  </td>
                  <td>${this.items[item].product}</td>
                  <td>$ ${this.items[item].price}</td>
+                 <td></td>
                  <td>
                     <div class="modal_count_wrapper">
-                      <span class="minus" data-id = "${this.items[item].id}">&#9668;</span>
+                      <span id="minus"  data-id = "${this.items[item].id}">&#9668;</span>
                       <span class="count">${this.items[item].count}</span>
-                      <span class="plus" data-id = "${this.items[item].id}">&#9658;</span>
+                      <span id="plus" data-id = "${this.items[item].id}">&#9658;</span>
                     </div>
                  </td>
-                 <td>$ ${this.items[item].price }</td>
-                 // <td>${this.items[item].discount}</td>
+                 <td class="total_price">$ ${this.items[item].price  * this.items[item].count} </td>
                  <td><span class="remove" data-id = "${this.items[item].id}">&#10006;</span></td>
              </tr>
             `
-            cartHtml += html
+            const htmlDiscount = `
+             <tr>
+                 <td>
+                    <div class="table_img">
+                        <img src="${this.items[item].img}" alt="product">
+                    </div>
+                 </td>
+                 <td>${this.items[item].product}</td>
+                 <td>$ ${this.items[item].price}</td>
+                 <td>- ${this.items[item].discount} %</td>
+                 <td>
+                    <div class="modal_count_wrapper">
+                      <span id="minus"  data-id = "${this.items[item].id}">&#9668;</span>
+                      <span class="count">${this.items[item].count}</span>
+                      <span id="plus" data-id = "${this.items[item].id}">&#9658;</span>
+                    </div>
+                 </td>
+                 <td class="total_price">$ ${(this.items[item].price  - this.items[item].price  / 100 * this.items[item].discount) * this.items[item].count} </td>
+                 <td><span class="remove" data-id = "${this.items[item].id}">&#10006;</span></td>
+             </tr>
+            `
+            if(this.items[item].discount === 0){
+                cartHtml += html
+            }else {
+                cartHtml += htmlDiscount
+            }
         }
         tbody.innerHTML = cartHtml
-        console.log(cartHtml)
+    }
+    this.drawOrder = function (){
+        let order = 0;
+        let orderHtml
+        if (Object.entries(this.items).length===0){
+            orderHtml =`
+                <div class="wrapper_order_price">
+                    <h3></h3>
+                    <span class="order_price">Cart is empty</span>
+                </div>
+        `
+            orderPrice.innerHTML = orderHtml
+        } else {
+            for (let item in this.items){
+                order += (this.items[item].price  - this.items[item].price  / 100 * this.items[item].discount) * this.items[item].count
+            }
+            orderHtml =`
+                <div class="wrapper_order_price">
+                    <h3>Order price</h3>
+                    <span class="order_price">${order}</span>
+                </div>
+        `
+            orderPrice.innerHTML = orderHtml
+        }
     }
     this.init = function () {
         let _self = this;
         addToCart.forEach(function (btnToCart) {
             btnToCart.addEventListener('click', function (event) {
+                event.preventDefault()
                 let target = event.target;
                 let id = target.getAttribute ('data-id');
                 let item = product.find(function (item){
@@ -141,11 +191,41 @@ let Cart = function () {
                     }
                 })
                 _self.addItem(item.id,item.img, item.product, item.price, item.discount)
-                console.log(_self.items)
             })
         })
         document.querySelector('.order_cart').addEventListener('click', function () {
             _self.drawItems(_self.items)
+            _self.drawOrder()
+        })
+        tbody.addEventListener('click', function (event){
+            let target = event.target;
+            console.log(target)
+            let id = target.getAttribute ('data-id');
+
+            if (target.classList.contains('#plus')) {
+                _self.items[id].count++
+                console.log(_self.items[id].count)
+                _self.drawItems(_self.items)
+                _self.drawOrder()
+
+            if (target.classList.contains('#minus') && _self.items[id].count > 1){
+                _self.items[id].count--
+                _self.drawItems(_self.items)
+                _self.drawOrder()
+            }
+            if (target.classList.contains('remove')){
+                document.querySelectorAll('.remove').forEach(function (btn){
+                    btn.addEventListener('click', function (event){
+                        let target = event.target;
+                        let id = target.getAttribute ('data-id');
+                        delete _self.items[id]
+                        _self.drawItems(_self.items)
+                        _self.drawOrder()
+                    })
+                })
+            }
+
+            }
         })
     }
 }
